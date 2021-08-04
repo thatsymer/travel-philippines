@@ -5,23 +5,23 @@ myModal.addEventListener('shown.mdb.modal', () => {
   myInput.focus()
 })
 
-// GOOGLE MAP API
-
-let map;
-
+var map, maps , mapt;
 function initMap() {
-  const siargao = {lat: 9.856036270916261, lng: 126.04973252719375};
-  const palawan = {lat: 9.469612035290139, lang: 118.40848115334043};
-  const tagaytay = {lat: 14.11795298880045, lang: 120.96309257761561}
-  
-
-  map = new google.maps.Map(document.getElementById("map"), {
-    center: {lat: 12.372812838582878, lang: 122.7905248677026},
-    zoom: 1,
+  map1 = new google.maps.Map(document.getElementById("map"), {
+    zoom: 10,
+    center: { lat: 9.856036270916261, lng: 126.04973252719375 },
   });
 
-  // const marker = new google.maps.Marker({
-  //   position: siargao,
-  //   map: map,
-  // });
-}
+  maps = new google.maps.Map(document.getElementById("map2"), {
+    zoom: 5,
+    center: {lang: 9.472558932859268, lat: 118.43423970452797},
+  });
+  
+
+  mapt = new google.maps.Map(document.getElementById("map3"), {
+    zoom: 13,
+    center: {lang: 14.119950697447722, lat: 120.96618248249298},
+  });
+  }
+
+
