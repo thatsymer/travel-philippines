@@ -112,3 +112,7 @@ a.mid-hov:before {
 .text__shadow{
   text-shadow: -1px 1px 5px rgb(0, 0, 0);
 }
+
+#map {
+  height: 60vh;
+}
