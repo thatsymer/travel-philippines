@@ -25,3 +25,5 @@ function initMap() {
   }
 
 
+  ScrollReveal({ duration: 1000 })
+  ScrollReveal().reveal('.ph');
